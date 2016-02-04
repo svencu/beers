@@ -25,7 +25,7 @@ class Bartender < People
 end
 
 
-class Customer < Person
+class Customer < People
   def initialize(name)
     super
   end
