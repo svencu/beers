@@ -25,7 +25,7 @@ class Bartender < People
 end
 
 
-class Customer < Person
+class Customer < People
   def initialize(name)
     super
   end
@@ -37,4 +37,3 @@ end
 j = Bartender.new("Joe")
 q = Customer.new("Mike")
 j.bartender_greet
-j.whats_your_name
