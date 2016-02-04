@@ -33,8 +33,3 @@ class Customer < People
     puts "Hi! Can I have a beer please, #{@name}"
   end
 end
-
-j = Bartender.new("Joe")
-q = Customer.new("Mike")
-j.bartender_greet
-j.whats_your_name
