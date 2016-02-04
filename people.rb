@@ -24,14 +24,13 @@ class Bartender < People
   end
 end
 
-class Customer < People
+
+class Customer < Person
   def initialize(name)
     super
   end
-  def general_banter_Customer()
-    puts "Great, once I get a beer!"
-  end
-  def whats_your_name
+  def greet
+    puts "Hi! Can I have a beer please, #{@name}"
   end
 end
 
