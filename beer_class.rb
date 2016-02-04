@@ -1,4 +1,6 @@
-require './people'
+require './person'
+require './bartender'
+require './customer'
 
 class Beer
   # We ONLY want to be able to read @amount, not
