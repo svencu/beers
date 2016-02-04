@@ -16,4 +16,6 @@ end
 
 class Customer(name) < Person
   super
+  def greet
+    puts "Hi! Can I have a beer please, #{@name}"
 end
