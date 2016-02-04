@@ -18,8 +18,8 @@ class Beer
 end
 
 
-the_bartender = Bartender.new("Joe")
-captain_jack = Customer.new("Cpt. Jack")
 
-the_bartender.greet(captain_jack)
-captain_jack.greet(the_bartender)
+j = Bartender.new("Joe")
+q = Customer.new("Mike")
+j.bartender_greet
+j.whats_your_name

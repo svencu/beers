@@ -3,11 +3,20 @@ class People
   def initialize(name)
     @name = name
   end
-  def whats_your_name
-    say @name
+
+  #def whats_your_name
+  #end
+
+  def general_greet(other_person)
+    say "How are you today?"
+    other_person.general_response
   end
-  def general_banter
-    puts "How are you today?"
+
+  def say(message)
+    puts "#{@name}: #{message}"
+  end
+  def general_response
+    say "fine"
   end
 end
 
@@ -17,10 +26,9 @@ class Bartender < People
     super
     @customer = []
   end
+
   def bartender_greet
     puts "Welcome to my bar"
-  end
-  def whats_your_name
   end
 end
 
@@ -29,11 +37,12 @@ class Customer < People
   def initialize(name)
     super
   end
+
   def greet
     puts "Hi! Can I have a beer please, #{@name}"
   end
 end
-
-j = Bartender.new("Joe")
-q = Customer.new("Mike")
-j.bartender_greet
+joe = Bartender.new("Joe")
+mike = Customer.new("Mike")
+joe.say("I am saying someing")
+joe.general_greet(mike)
