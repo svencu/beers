@@ -1,19 +1,41 @@
-class Person
+#require './beer_class'
+class People
   def initialize(name)
     @name = name
   end
   def whats_your_name
-    Person.name
+    say @name
   end
+  def general_banter
+    puts "How are you today?"
+  end
+end
 
-class Bartender(name) < Person
-  super
-  @customer = []
-  def greet
+
+class Bartender < People
+  def initialize(name)
+    super
+    @customer = []
+  end
+  def bartender_greet
     puts "Welcome to my bar"
   end
+  def whats_your_name
+  end
 end
 
-class Customer(name) < Person
-  super
+class Customer < People
+  def initialize(name)
+    super
+  end
+  def general_banter_Customer()
+    puts "Great, once I get a beer!"
+  end
+  def whats_your_name
+  end
 end
+
+j = Bartender.new("Joe")
+q = Customer.new("Mike")
+j.bartender_greet
+j.whats_your_name
