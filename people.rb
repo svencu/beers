@@ -42,7 +42,3 @@ class Customer < People
     puts "Hi! Can I have a beer please, #{@name}"
   end
 end
-joe = Bartender.new("Joe")
-mike = Customer.new("Mike")
-joe.say("I am saying someing")
-joe.general_greet(mike)
