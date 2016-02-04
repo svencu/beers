@@ -19,7 +19,7 @@ end
 
 
 
-j = Bartender.new("Joe")
-q = Customer.new("Mike")
-j.bartender_greet
-j.whats_your_name
+joe = Bartender.new("Joe")
+mike = Customer.new("Mike")
+joe.bartender_greet
+mike.whats_your_name
